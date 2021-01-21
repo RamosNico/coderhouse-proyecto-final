@@ -288,3 +288,46 @@ footer {
       .jumbotron.landing-colorista .landingText .subHeading {
         font-size: 1.3rem;
         padding-top: 0.3rem; } }
+
+.jumbotron.landing-contact {
+  background: url("../img/contacto/landingContact.jpg");
+  background-size: cover;
+  background-position-y: 50%;
+  min-height: 50vh; }
+  @media (max-width: 768px) {
+    .jumbotron.landing-contact {
+      background-position-x: 70%;
+      background-position-y: 15%; } }
+  .jumbotron.landing-contact .landingText h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #white;
+    letter-spacing: 0.1rem;
+    text-shadow: 0.3rem 0.3rem 0.9rem #181818; }
+    @media (max-width: 768px) {
+      .jumbotron.landing-contact .landingText h1 {
+        font-size: 2.5rem; } }
+  .jumbotron.landing-contact .landingText .subHeading {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #dcdcdc;
+    text-shadow: 0.3rem 0.3rem 0.9rem #181818; }
+    @media (max-width: 768px) {
+      .jumbotron.landing-contact .landingText .subHeading {
+        font-size: 1.3rem;
+        padding-top: 0.3rem; } }
+
+#formulario div {
+  padding: 0.5rem;
+  font-size: 1rem; }
+
+#formulario input {
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: 2px solid white;
+  background: transparent; }
+
+#formulario select {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f1f1f1; }
