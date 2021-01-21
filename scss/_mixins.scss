@@ -1,0 +1,14 @@
+// Colores
+$colores: (
+    "colorAudiovisual": $colorAudiovisual,
+    "colorGrading": $colorColorista,
+    "colorFotografia": $colorFotografia,
+    "grisPrimario": $grey,
+    "darkPrincipal": $dark,
+);
+
+@each $color, $hex in $colores {
+    .background-#{$color} {
+        background-color: $hex;
+    }
+}

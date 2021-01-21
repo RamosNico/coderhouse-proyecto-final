@@ -1,0 +1,236 @@
+@charset "UTF-8";
+.background-colorAudiovisual {
+  background-color: #0cd2b4; }
+
+.background-colorGrading {
+  background-color: #d2850c; }
+
+.background-colorFotografia {
+  background-color: #d20c69; }
+
+.background-grisPrimario {
+  background-color: #a5a5a5; }
+
+.background-darkPrincipal {
+  background-color: #1d1d1d; }
+
+@media (max-width: 768px) {
+  * {
+    font-size: 14px; } }
+
+body {
+  background-color: #1d1d1d;
+  color: #a5a5a5; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover {
+    text-decoration: none;
+    color: inherit; }
+
+.colorAudiovisual {
+  color: #0cd2b4; }
+
+.colorColorista {
+  color: #d2850c; }
+
+.colorFotografia {
+  color: #d20c69; }
+
+h1,
+h2,
+h3,
+.navbar-brand {
+  font-family: "Work Sans", sans-serif;
+  color: #dcdcdc; }
+
+h4,
+h5,
+h6,
+p {
+  font-family: "Merriweather", serif; }
+
+.btn-outline-audiovisual {
+  color: #0cd2b4;
+  border-color: #0cd2b4; }
+
+.btn-outline-audiovisual:hover {
+  background-color: #0cd2b4;
+  color: #181818;
+  transition: 500ms ease; }
+
+.btn-outline-colorista {
+  color: #d2850c;
+  border-color: #d2850c; }
+
+.btn-outline-colorista:hover {
+  background-color: #d2850c;
+  color: white;
+  transition: 500ms ease; }
+
+.btn-outline-fotografia {
+  color: #d20c69;
+  border-color: #d20c69; }
+
+.btn-outline-fotografia:hover {
+  background-color: #d20c69;
+  color: white;
+  transition: 500ms ease; }
+
+nav {
+  background-color: #181818; }
+  nav .active {
+    color: white; }
+  nav a {
+    color: #a5a5a5; }
+    nav a:hover {
+      color: white;
+      transition: 500ms ease; }
+  nav .navAudiovisual:hover {
+    color: #0cd2b4;
+    transition: 700ms ease; }
+  nav .navColorista:hover {
+    color: #d2850c;
+    transition: 700ms ease; }
+  nav .navFotografia:hover {
+    color: #d20c69;
+    transition: 700ms ease; }
+  nav .active-audiovisual {
+    color: #0cd2b4; }
+  nav .active-colorista {
+    color: #d2850c; }
+  nav .active-fotografia {
+    color: #d20c69; }
+
+.landing {
+  cursor: default; }
+  .landing .videoBackground {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; }
+  .landing .landingText {
+    position: absolute;
+    top: 50%;
+    width: 97%; }
+    .landing .landingText h1 {
+      font-size: 3.5rem;
+      font-weight: 600;
+      color: #dcdcdc;
+      letter-spacing: 0.1rem;
+      text-shadow: 0.3rem 0.3rem 0.9rem #181818; }
+      @media (max-width: 768px) {
+        .landing .landingText h1 {
+          font-size: 2.5rem; } }
+    .landing .landingText .subHeading {
+      font-size: 2rem;
+      font-weight: 400;
+      color: #dcdcdc;
+      text-shadow: 0.3rem 0.3rem 0.9rem #181818; }
+      .landing .landingText .subHeading .colorAudiovisual {
+        /* No estoy pudiendo hacer que los span adapten el color sin perder el tamaño */
+        color: #0cd2b4; }
+      @media (max-width: 768px) {
+        .landing .landingText .subHeading {
+          font-size: 1.3rem;
+          padding-top: 0.3rem; } }
+    @media (max-width: 768px) {
+      .landing .landingText .btn {
+        font-size: 1rem; } }
+    .landing .landingText .animateAudiovisual {
+      animation: animateAudiovisual 700ms ease 2s;
+      animation-fill-mode: forwards; }
+    .landing .landingText .animateFotografia {
+      animation: animateFotografia 700ms ease 3s;
+      animation-fill-mode: forwards; }
+    .landing .landingText .animateColorista {
+      animation: animateColorista 700ms ease 4s;
+      animation-fill-mode: forwards; }
+  @media (max-width: 768px) {
+    .landing #bgvid {
+      display: none; }
+    .landing .videoBackground {
+      background-image: url(../img/index/landingIndex.jpg);
+      background-size: cover;
+      background-position-x: 43%; } }
+
+@keyframes animateAudiovisual {
+  0% {
+    color: #dcdcdc; }
+  100% {
+    color: #0cd2b4; } }
+
+@keyframes animateColorista {
+  0% {
+    color: #dcdcdc; }
+  100% {
+    color: #d2850c; } }
+
+@keyframes animateFotografia {
+  0% {
+    color: #dcdcdc; }
+  100% {
+    color: #d20c69; } }
+
+footer {
+  background-color: #181818;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin-top: 1.5rem; }
+  footer p {
+    margin-bottom: 0.2rem; }
+  footer .row {
+    justify-content: space-between;
+    align-items: center; }
+  footer .redesSociales img {
+    padding-right: 0.3rem; }
+  footer .contactoWhatsapp {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    padding-bottom: 0.3rem; }
+  footer .contactoEmail {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem; }
+
+.audiovisual h2 {
+  color: #0cd2b4;
+  padding-top: 3rem; }
+
+.audiovisual .audiovisualTexto {
+  align-items: center; }
+
+.colorGrading h2 {
+  color: #d2850c;
+  padding-top: 3rem; }
+
+.fotografia h2 {
+  color: #d20c69;
+  padding-top: 3rem; }
+
+.jumbotron {
+  background: url("../img/audiovisual/landingAudiovisual.jpg") no-repeat center;
+  background-position-y: 13%;
+  min-height: 50vh; }
+  @media (max-width: 768px) {
+    .jumbotron {
+      background-position-x: 70%;
+      background-position-y: 15%; } }
+  .jumbotron .landingText h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-shadow: 0.3rem 0.3rem 0.9rem #181818; }
+    @media (max-width: 768px) {
+      .jumbotron .landingText h1 {
+        font-size: 2.5rem; } }
+  .jumbotron .landingText .subHeading {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #dcdcdc;
+    text-shadow: 0.3rem 0.3rem 0.9rem #181818; }
+    @media (max-width: 768px) {
+      .jumbotron .landingText .subHeading {
+        font-size: 1.3rem;
+        padding-top: 0.3rem; } }

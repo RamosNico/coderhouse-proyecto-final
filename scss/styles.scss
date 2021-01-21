@@ -1,0 +1,303 @@
+// Imports
+@import "_variables.sass";
+@import "inspiraciones.sass";
+@import "_mixins.scss";
+
+// Generales
+* {
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+body {
+    background-color: $dark;
+    color: $grey;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+// Colores según el servicio
+.colorAudiovisual {
+    color: $colorAudiovisual;
+}
+.colorColorista {
+    color: $colorColorista;
+}
+.colorFotografia {
+    color: $colorFotografia;
+}
+// REEMPLAZADOS POR LA TRANSICION DEL LANDING
+
+// Tipografías
+h1,
+h2,
+h3,
+.navbar-brand {
+    font-family: "Work Sans", sans-serif;
+    color: #dcdcdc;
+}
+
+h4,
+h5,
+h6,
+p {
+    font-family: "Merriweather", serif;
+}
+
+// Botones personalizados
+.btn-outline-audiovisual {
+    color: $colorAudiovisual;
+    border-color: $colorAudiovisual;
+}
+.btn-outline-audiovisual:hover {
+    background-color: $colorAudiovisual;
+    color: $darkNavbar;
+    transition: 500ms ease;
+}
+
+.btn-outline-colorista {
+    color: $colorColorista;
+    border-color: $colorColorista;
+}
+.btn-outline-colorista:hover {
+    background-color: $colorColorista;
+    color: white;
+    transition: 500ms ease;
+}
+
+.btn-outline-fotografia {
+    color: $colorFotografia;
+    border-color: $colorFotografia;
+}
+.btn-outline-fotografia:hover {
+    background-color: $colorFotografia;
+    color: white;
+    transition: 500ms ease;
+}
+
+// Navbar
+nav {
+    background-color: $darkNavbar;
+    .active {
+        color: white;
+    }
+    a {
+        color: $grey;
+        &:hover {
+            color: white;
+            transition: 500ms ease;
+        }
+    }
+
+    // Navbar - Hovers
+    .navAudiovisual:hover {
+        color: $colorAudiovisual;
+        transition: 700ms ease;
+    }
+    .navColorista:hover {
+        color: $colorColorista;
+        transition: 700ms ease;
+    }
+    .navFotografia:hover {
+        color: $colorFotografia;
+        transition: 700ms ease;
+    }
+
+    // Navbar - Active de colores
+    .active-audiovisual {
+        color: $colorAudiovisual;
+    }
+    .active-colorista {
+        color: $colorColorista;
+    }
+    .active-fotografia {
+        color: $colorFotografia;
+    }
+}
+
+// Landing/Hero Page
+.landing {
+    cursor: default;
+    .videoBackground {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+    }
+    .landingText {
+        position: absolute;
+        top: 50%;
+        width: 97%;
+        & h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: #dcdcdc;
+            letter-spacing: 0.1rem;
+            text-shadow: 0.3rem 0.3rem 0.9rem $darkNavbar;
+            @media (max-width: 768px) {
+                font-size: 2.5rem;
+            }
+        }
+        & .subHeading {
+            font-size: 2rem;
+            font-weight: 400;
+            color: #dcdcdc;
+            text-shadow: 0.3rem 0.3rem 0.9rem $darkNavbar;
+            .colorAudiovisual {
+                /* No estoy pudiendo hacer que los span adapten el color sin perder el tamaño */
+                color: $colorAudiovisual;
+            }
+            @media (max-width: 768px) {
+                font-size: 1.3rem;
+                padding-top: 0.3rem;
+            }
+        }
+        .btn {
+            @media (max-width: 768px) {
+                font-size: 1rem;
+            }
+        }
+        .animateAudiovisual {
+            animation: animateAudiovisual 700ms ease 2s;
+            animation-fill-mode: forwards;
+        }
+        .animateFotografia {
+            animation: animateFotografia 700ms ease 3s;
+            animation-fill-mode: forwards;
+        }
+        .animateColorista {
+            animation: animateColorista 700ms ease 4s;
+            animation-fill-mode: forwards;
+        }
+    }
+    @media (max-width: 768px) {
+        #bgvid {
+            display: none;
+        }
+        .videoBackground {
+            background-image: url(../img/index/landingIndex.jpg);
+            background-size: cover;
+            background-position-x: 43%;
+        }
+    }
+}
+
+// ANIMACIONES LANDING COLORES
+@keyframes animateAudiovisual {
+    0% {
+        color: #dcdcdc;
+    }
+    100% {
+        color: $colorAudiovisual;
+    }
+}
+@keyframes animateColorista {
+    0% {
+        color: #dcdcdc;
+    }
+    100% {
+        color: $colorColorista;
+    }
+}
+@keyframes animateFotografia {
+    0% {
+        color: #dcdcdc;
+    }
+    100% {
+        color: $colorFotografia;
+    }
+}
+
+// Footer
+footer {
+    background-color: $darkNavbar;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-top: 1.5rem;
+    p {
+        margin-bottom: 0.2rem;
+    }
+    .row {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .redesSociales img {
+        padding-right: 0.3rem;
+    }
+    .contactoWhatsapp {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+        padding-bottom: 0.3rem;
+    }
+    .contactoEmail {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+}
+
+// INDEX - Sections
+.audiovisual {
+    h2 {
+        color: $colorAudiovisual;
+        padding-top: 3rem;
+    }
+    .audiovisualTexto {
+        align-items: center;
+    }
+}
+
+.colorGrading {
+    h2 {
+        color: $colorColorista;
+        padding-top: 3rem;
+    }
+}
+
+.fotografia {
+    h2 {
+        color: $colorFotografia;
+        padding-top: 3rem;
+    }
+}
+
+// Página AUDIOVISUAL
+// Landing Audiovisual
+.jumbotron {
+    background: url("../img/audiovisual/landingAudiovisual.jpg") no-repeat
+        center;
+    background-position-y: 13%;
+    min-height: 50vh;
+    @media (max-width: 768px) {
+        background-position-x: 70%;
+        background-position-y: 15%;
+    }
+    .landingText {
+        & h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            letter-spacing: 0.1rem;
+            text-shadow: 0.3rem 0.3rem 0.9rem $darkNavbar;
+            @media (max-width: 768px) {
+                font-size: 2.5rem;
+            }
+        }
+        & .subHeading {
+            font-size: 2rem;
+            font-weight: 400;
+            color: #dcdcdc;
+            text-shadow: 0.3rem 0.3rem 0.9rem $darkNavbar;
+            @media (max-width: 768px) {
+                font-size: 1.3rem;
+                padding-top: 0.3rem;
+            }
+        }
+    }
+}
