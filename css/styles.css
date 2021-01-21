@@ -209,28 +209,82 @@ footer {
   color: #d20c69;
   padding-top: 3rem; }
 
-.jumbotron {
+.jumbotron.landing-audiovisual {
   background: url("../img/audiovisual/landingAudiovisual.jpg") no-repeat center;
   background-position-y: 13%;
   min-height: 50vh; }
   @media (max-width: 768px) {
-    .jumbotron {
+    .jumbotron.landing-audiovisual {
       background-position-x: 70%;
       background-position-y: 15%; } }
-  .jumbotron .landingText h1 {
+  .jumbotron.landing-audiovisual .landingText h1 {
     font-size: 3.5rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
     text-shadow: 0.3rem 0.3rem 0.9rem #181818; }
     @media (max-width: 768px) {
-      .jumbotron .landingText h1 {
+      .jumbotron.landing-audiovisual .landingText h1 {
         font-size: 2.5rem; } }
-  .jumbotron .landingText .subHeading {
+  .jumbotron.landing-audiovisual .landingText .subHeading {
     font-size: 2rem;
     font-weight: 400;
     color: #dcdcdc;
     text-shadow: 0.3rem 0.3rem 0.9rem #181818; }
     @media (max-width: 768px) {
-      .jumbotron .landingText .subHeading {
+      .jumbotron.landing-audiovisual .landingText .subHeading {
+        font-size: 1.3rem;
+        padding-top: 0.3rem; } }
+
+.jumbotron.landing-fotografia {
+  background-image: url("../img/fotografia/landingFotografia.jpg");
+  background-size: cover;
+  background-position: center;
+  background-position-y: 60%;
+  min-height: 50vh; }
+  @media (max-width: 768px) {
+    .jumbotron.landing-fotografia {
+      background-position-x: 70%;
+      background-position-y: 15%; } }
+  .jumbotron.landing-fotografia .landingText h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-shadow: 0.3rem 0.3rem 0.9rem #181818; }
+    @media (max-width: 768px) {
+      .jumbotron.landing-fotografia .landingText h1 {
+        font-size: 2.5rem; } }
+  .jumbotron.landing-fotografia .landingText .subHeading {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #dcdcdc;
+    text-shadow: 0.3rem 0.3rem 0.9rem #181818; }
+    @media (max-width: 768px) {
+      .jumbotron.landing-fotografia .landingText .subHeading {
+        font-size: 1.3rem;
+        padding-top: 0.3rem; } }
+
+.jumbotron.landing-colorista {
+  background: url("../img/grading/landingColorista.jpg") no-repeat center;
+  background-position-y: 28%;
+  min-height: 50vh; }
+  @media (max-width: 768px) {
+    .jumbotron.landing-colorista {
+      background-position-x: 70%;
+      background-position-y: 15%; } }
+  .jumbotron.landing-colorista .landingText h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-shadow: 0.3rem 0.3rem 0.9rem #181818; }
+    @media (max-width: 768px) {
+      .jumbotron.landing-colorista .landingText h1 {
+        font-size: 2.5rem; } }
+  .jumbotron.landing-colorista .landingText .subHeading {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #dcdcdc;
+    text-shadow: 0.3rem 0.3rem 0.9rem #181818; }
+    @media (max-width: 768px) {
+      .jumbotron.landing-colorista .landingText .subHeading {
         font-size: 1.3rem;
         padding-top: 0.3rem; } }
