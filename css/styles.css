@@ -301,7 +301,7 @@ footer {
   .jumbotron.landing-contact .landingText h1 {
     font-size: 3.5rem;
     font-weight: 600;
-    color: #white;
+    color: #dcdcdc;
     letter-spacing: 0.1rem;
     text-shadow: 0.3rem 0.3rem 0.9rem #181818; }
     @media (max-width: 768px) {
