@@ -14,10 +14,6 @@
 .background-darkPrincipal {
   background-color: #1d1d1d; }
 
-@media (max-width: 768px) {
-  * {
-    font-size: 14px; } }
-
 body {
   background-color: #1d1d1d;
   color: #a5a5a5; }

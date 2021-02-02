@@ -4,11 +4,6 @@
 @import "_mixins.scss";
 
 // Generales
-* {
-    @media (max-width: 768px) {
-        font-size: 14px;
-    }
-}
 body {
     background-color: $dark;
     color: $grey;
