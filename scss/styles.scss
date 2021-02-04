@@ -90,31 +90,31 @@ nav {
             transition: 500ms ease;
         }
     }
+}
 
-    // Navbar - Hovers
-    .navAudiovisual:hover {
-        color: $colorAudiovisual;
-        transition: 700ms ease;
-    }
-    .navColorista:hover {
-        color: $colorColorista;
-        transition: 700ms ease;
-    }
-    .navFotografia:hover {
-        color: $colorFotografia;
-        transition: 700ms ease;
-    }
+// Navbar - Hovers
+.navAudiovisual:hover {
+    color: $colorAudiovisual !important;
+    transition: 700ms ease;
+}
+.navColorista:hover {
+    color: $colorColorista !important;
+    transition: 700ms ease;
+}
+.navFotografia:hover {
+    color: $colorFotografia !important;
+    transition: 700ms ease;
+}
 
-    // Navbar - Active de colores
-    .active-audiovisual {
-        color: $colorAudiovisual;
-    }
-    .active-colorista {
-        color: $colorColorista;
-    }
-    .active-fotografia {
-        color: $colorFotografia;
-    }
+// Navbar - Active de colores
+.active-audiovisual {
+    color: $colorAudiovisual !important;
+}
+.active-colorista {
+    color: $colorColorista !important;
+}
+.active-fotografia {
+    color: $colorFotografia !important;
 }
 
 // Landing/Hero Page
@@ -132,7 +132,6 @@ nav {
         & h1 {
             font-size: 3.5rem;
             font-weight: 600;
-            color: #dcdcdc;
             letter-spacing: 0.1rem;
             text-shadow: 0.3rem 0.3rem 0.9rem $darkNavbar;
             @media (max-width: 768px) {

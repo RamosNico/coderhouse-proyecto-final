@@ -83,21 +83,27 @@ nav {
     nav a:hover {
       color: white;
       transition: 500ms ease; }
-  nav .navAudiovisual:hover {
-    color: #0cd2b4;
-    transition: 700ms ease; }
-  nav .navColorista:hover {
-    color: #d2850c;
-    transition: 700ms ease; }
-  nav .navFotografia:hover {
-    color: #d20c69;
-    transition: 700ms ease; }
-  nav .active-audiovisual {
-    color: #0cd2b4; }
-  nav .active-colorista {
-    color: #d2850c; }
-  nav .active-fotografia {
-    color: #d20c69; }
+
+.navAudiovisual:hover {
+  color: #0cd2b4 !important;
+  transition: 700ms ease; }
+
+.navColorista:hover {
+  color: #d2850c !important;
+  transition: 700ms ease; }
+
+.navFotografia:hover {
+  color: #d20c69 !important;
+  transition: 700ms ease; }
+
+.active-audiovisual {
+  color: #0cd2b4 !important; }
+
+.active-colorista {
+  color: #d2850c !important; }
+
+.active-fotografia {
+  color: #d20c69 !important; }
 
 .landing {
   cursor: default; }
@@ -112,7 +118,6 @@ nav {
     .landing .landingText h1 {
       font-size: 3.5rem;
       font-weight: 600;
-      color: #dcdcdc;
       letter-spacing: 0.1rem;
       text-shadow: 0.3rem 0.3rem 0.9rem #181818; }
       @media (max-width: 768px) {
