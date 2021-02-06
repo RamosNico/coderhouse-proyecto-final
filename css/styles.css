@@ -180,9 +180,15 @@ footer {
   margin-top: 1.5rem; }
   footer p {
     margin-bottom: 0.2rem; }
+    @media (max-width: 768px) {
+      footer p {
+        font-size: 0.8rem; } }
   footer .row {
     justify-content: space-between;
     align-items: center; }
+    @media (max-width: 768px) {
+      footer .row > div {
+        margin-bottom: 0.8rem; } }
   footer .redesSociales img {
     padding-right: 0.3rem; }
   footer .contactoWhatsapp {
@@ -318,17 +324,29 @@ footer {
         font-size: 1.3rem;
         padding-top: 0.3rem; } }
 
-#formulario div {
-  padding: 0.5rem;
-  font-size: 1rem; }
-
-#formulario input {
-  padding: 10px 20px;
-  margin: 8px 0;
-  border: 2px solid white;
-  background: transparent; }
-
-#formulario select {
-  padding: 10px 20px;
-  border: none;
-  background-color: #f1f1f1; }
+#formulario {
+  font-family: "Merriweather", serif; }
+  #formulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #formulario div {
+    padding: 0.5rem;
+    font-size: 1rem; }
+  #formulario input {
+    display: block;
+    padding: 5px 20px;
+    margin-bottom: 4px;
+    border: 1px solid white;
+    background: transparent;
+    color: white; }
+    #formulario input[type="checkbox"] {
+      display: inline-block;
+      margin-right: 5px; }
+  #formulario select {
+    display: block;
+    padding: 5px 20px;
+    border: none;
+    background-color: #f1f1f1; }
+  #formulario button {
+    margin: 0px 5px; }
