@@ -16,7 +16,9 @@
 
 @media (max-width: 768px) {
   :root {
-    font-size: 14px; } }
+    font-size: 14px; }
+    :root button {
+      margin-bottom: 1.6rem; } }
 
 body {
   background-color: #1d1d1d;
