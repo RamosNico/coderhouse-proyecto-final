@@ -249,6 +249,7 @@ footer {
         padding-top: 0.3rem; } }
 
 .jumbotron.landing-fotografia {
+  background-color: #1d1d1d;
   background-image: url("../img/fotografia/landingFotografia.jpg");
   background-size: cover;
   background-position: center;
