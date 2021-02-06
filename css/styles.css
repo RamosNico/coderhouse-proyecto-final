@@ -14,6 +14,10 @@
 .background-darkPrincipal {
   background-color: #1d1d1d; }
 
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px; } }
+
 body {
   background-color: #1d1d1d;
   color: #a5a5a5; }
@@ -324,29 +328,33 @@ footer {
         font-size: 1.3rem;
         padding-top: 0.3rem; } }
 
-#formulario {
-  font-family: "Merriweather", serif; }
-  #formulario form {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  #formulario div {
+#formulario form {
+  font-family: "Merriweather", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (max-width: 768px) {
+    #formulario form h2 {
+      font-size: 1.8rem; }
+    #formulario form h5 {
+      font-size: 1.2rem; } }
+  #formulario form div {
     padding: 0.5rem;
     font-size: 1rem; }
-  #formulario input {
+  #formulario form input {
     display: block;
-    padding: 5px 20px;
+    padding: 5px 0px 5px 5px;
     margin-bottom: 4px;
     border: 1px solid white;
     background: transparent;
     color: white; }
-    #formulario input[type="checkbox"] {
+    #formulario form input[type="checkbox"] {
       display: inline-block;
       margin-right: 5px; }
-  #formulario select {
+  #formulario form select {
     display: block;
-    padding: 5px 20px;
+    padding: 5px;
     border: none;
     background-color: #f1f1f1; }
-  #formulario button {
+  #formulario form button {
     margin: 0px 5px; }
