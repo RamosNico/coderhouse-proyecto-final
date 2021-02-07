@@ -209,18 +209,18 @@ footer {
 
 .audiovisual h2 {
   color: #0cd2b4;
-  padding-top: 3rem; }
+  padding-top: 2rem; }
 
 .audiovisual .audiovisualTexto {
   align-items: center; }
 
 .colorGrading h2 {
   color: #d2850c;
-  padding-top: 3rem; }
+  padding-top: 0rem; }
 
 .fotografia h2 {
   color: #d20c69;
-  padding-top: 3rem; }
+  padding-top: 1rem; }
 
 .jumbotron.landing-audiovisual {
   background: url("../img/audiovisual/landingAudiovisual.jpg") no-repeat center;
